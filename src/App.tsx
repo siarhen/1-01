@@ -1,14 +1,19 @@
 import './App.css';
 import styled from 'styled-components';
-
+import logo from './assets/logo.svg';
+import Header from "./Layout/Header/Header";
+import Main from "./Layout/Main/Main";
 
 function App() {
     return (
         <div className="App">
-            <Title>Welcome to IT-INCUBATOR</Title>
+            <Header />
+            {/*<Title>Welcome to IT-INCUBATOR</Title>*/}
+            <Main/>
         </div>
     );
 }
+
 
 export default App;
 

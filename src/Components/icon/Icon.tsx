@@ -7,9 +7,9 @@ type IconProps = {
 }
 
 const Icon = (props:IconProps) => {
-    console.log(`${iconsSprite}#{$props.iconId} `);
+    // console.log(`${iconsSprite}#{$props.iconId} `);
     return (
-        <svg  width={props.size || "30"} height={props.size || "30"}>
+        <svg  width={props.size || "120"} height={props.size || "120"}>
             <use xlinkHref={ `${iconsSprite}#${props.iconId} `}  />
         </svg>
     );

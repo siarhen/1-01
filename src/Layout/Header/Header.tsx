@@ -1,11 +1,13 @@
-import logo from "../../assets/social.svg";
+import socialLogos from "../../assets/social.svg";
 import styled from "styled-components";
+import logo from "../../assets/logo.svg";
 import Icon from "../../Components/icon/Icon";
 
 const Header = () => {
     return (
         <StyledHeader>
-            <img src={logo}/>
+
+            <img src={logo} alt={""}></img>
             <nav>
                 <StyledNav>
                     <StyledLi>
@@ -32,26 +34,30 @@ const Header = () => {
                     <StyledLi>
                         <Icon iconId={"twitter"} size={"30"}/>
                     </StyledLi>
-            </StyledNav>
-        </nav>
-</StyledHeader>
-)};
+                </StyledNav>
+            </nav>
+            <a href={"#"}>
+                <img src={socialLogos}/>
+            </a>
+        </StyledHeader>
+    )
+};
 const StyledHeader = styled.header`
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-
+    justify-content: space-between;
+    align-items: center;
 `
 const StyledLi = styled.li`
     color: #666666;
-    text-Font: DM Sans;
     font-weight: 500;
     font-size: 20px;
+    a{text-decoration: none}
 `
 const StyledNav = styled.ul`
     display: flex;
     gap: 30px;
     list-style: none;
-    text-decoration: none;
+    align-items: center;
 `
 export default Header

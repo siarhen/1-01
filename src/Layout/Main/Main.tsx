@@ -6,7 +6,7 @@ import {FlexWrapper} from "../../Components/FlexWrapper";
 const Main = () => {
     return (
         <div>
-            <FlexWrapper alignItems={"center"} justify={"space-around"}>
+            <FlexWrapper alignItems={"center"} justify={"space-between"}>
                 <div>
                     <span>Hi,👋</span>
                     <h2>I'm Daniil Shishaev</h2>

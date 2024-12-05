@@ -2,13 +2,15 @@ import React from 'react';
 import {OneSkill} from "../../Components/Skill/Skill";
 import styled from "styled-components";
 import {FlexWrapper} from "../../Components/FlexWrapper";
+import {SectionTitle} from "../../Components/SectionTitle";
 
 
 export const Skills = () => {
     return (
         <StyledSkills>
-            <h3>My Skills</h3>
-            <FlexWrapper direction={"row"} wrap={"wrap"}>
+            <SectionTitle>My Tech Stack</SectionTitle>
+            <h3>Technologies I’ve been working with recently</h3>
+            <FlexWrapper direction={"row"} wrap={"wrap"} gap={""}>
                 <OneSkill iconId={"html5"}/>
                 <OneSkill iconId={"git"}/>
                 <OneSkill iconId={"github"}/>
@@ -17,7 +19,7 @@ export const Skills = () => {
                 <OneSkill iconId={"vscode"}/>
                 <OneSkill iconId={"saas"}/>
                 <OneSkill iconId={"tailwind"}/>
-                <OneSkill iconId={"man"}/>
+                <OneSkill iconId={"greensock"}/>
                 <OneSkill iconId={"js"}/>
                 <OneSkill iconId={"bootstrap"}/>
                 <OneSkill iconId={"vector"}/>
@@ -28,5 +30,5 @@ export const Skills = () => {
 
 const StyledSkills = styled.div`
     background-color: aliceblue;
-    min-height: 100vh;
+    min-height: 557px;
 `

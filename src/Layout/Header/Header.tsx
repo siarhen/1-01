@@ -6,10 +6,9 @@ import Icon from "../../Components/icon/Icon";
 const Header = () => {
     return (
         <StyledHeader>
-
             <img src={logo} alt={""}></img>
             <nav>
-                <StyledNav>
+                <StyledUl>
                     <StyledLi>
                         <a href="">Home</a>
                     </StyledLi>
@@ -34,11 +33,17 @@ const Header = () => {
                     <StyledLi>
                         <Icon iconId={"twitter"} size={"30"}/>
                     </StyledLi>
-                </StyledNav>
+                </StyledUl>
             </nav>
-            <a href={"#"}>
-                <img src={socialLogos}/>
-            </a>
+            {/*<a href={"#"}>*/}
+                <Icon iconId={"git_cat"} size={"30"}    />
+            {/*</a>*/}
+            {/*<a href={"#"}>*/}
+                <Icon iconId={"twitter"} size={"30"}/>
+            {/*</a>*/}
+            {/*<a href={"#"}>*/}
+                <Icon iconId={"linkedin"}/>
+            {/*</a>*/}
         </StyledHeader>
     )
 };
@@ -54,7 +59,7 @@ const StyledLi = styled.li`
     font-size: 20px;
     a{text-decoration: none}
 `
-const StyledNav = styled.ul`
+const StyledUl = styled.ul`
     display: flex;
     gap: 30px;
     list-style: none;

@@ -23,10 +23,8 @@ const Photo = styled.img`
     height: 350px;
     object-fit: cover;
     border: 2px solid #e91e63;
-    border-radius:100%;
-    
-    
-`
+    border-radius: 100%;
 
+`
 
 export default Main;

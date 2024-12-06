@@ -10,7 +10,7 @@ export const Skills = () => {
         <StyledSkills>
             <SectionTitle>My Tech Stack</SectionTitle>
             <h3>Technologies I’ve been working with recently</h3>
-            <FlexWrapper direction={"row"} wrap={"wrap"} gap={""}>
+            <FlexWrapper direction={"row"} wrap={"wrap"} gap={"20px"}>
                 <OneSkill iconId={"html5"}/>
                 <OneSkill iconId={"git"}/>
                 <OneSkill iconId={"github"}/>

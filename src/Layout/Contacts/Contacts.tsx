@@ -1,10 +1,9 @@
 import React from 'react';
 
-export const Footer = () => {
+export const Contacts = () => {
     return (
         <div>
-
+            
         </div>
     );
 };
-

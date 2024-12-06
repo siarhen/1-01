@@ -1,15 +1,15 @@
 import React from 'react';
-import Project from "./Project";
+import {Project} from "./Project";
 import {FlexWrapper} from "../../Components/FlexWrapper";
 import styled from "styled-components";
 import {SectionTitle} from "../../Components/SectionTitle";
 
-import img1 from "../../assets/projectsImages/Rectangle 4.png";
-import img2 from "../../assets/projectsImages/Rectangle 8.png";
-import img3 from "../../assets/projectsImages/Rectangle 6.png";
-import img4 from "../../assets/projectsImages/Rectangle 13.png";
-import img5 from "../../assets/projectsImages/Rectangle 14.png";
-import img6 from "../../assets/projectsImages/Rectangle 24.png";
+import img1 from "../../assets/projectsImages/1.png";
+import img2 from "../../assets/projectsImages/3.png";
+import img3 from "../../assets/projectsImages/2.png";
+import img4 from "../../assets/projectsImages/4.png";
+import img5 from "../../assets/projectsImages/5.png";
+import img6 from "../../assets/projectsImages/6.png";
 
 const projectsArray = [
     {title : "Social Network", src : img1},

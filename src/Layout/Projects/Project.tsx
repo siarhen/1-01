@@ -8,13 +8,13 @@ type ProjectsPropsType = {
     text: string;
 
 }
-const Project = (props:ProjectsPropsType) => {
+export const Project = (props:ProjectsPropsType) => {
     return (
         <StyledProject>
             <Image src={props.src}/>
             <Title>{props.title}</Title>
             <Text>{props.text}</Text>
-            <PostTitle></PostTitle>
+            <Explanation></Explanation>
             <FlexWrapper>
                 <Link href={"#"}></Link>
                 <Link href={"#"}></Link>
@@ -27,20 +27,21 @@ const StyledProject=styled.div`
     background-color: bisque;
     max-width: 375px;
     width: 100%;
-    height: 570px
+    height: 570px;
+    border-radius: 20px;
 `
 const Title=styled.h3`
 `
 const Text=styled.p`
 `
 const Image = styled.img`
-    width: 100%;
+    //width: 100%;
     height: 260px;
     width: 375px ;
     object-fit: cover;
 `
 const Link=styled.a`
+    text-decoration: none;
 `
-const PostTitle=styled.p`
+const Explanation=styled.p`
 `
-export default Project;

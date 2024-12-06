@@ -1,12 +1,15 @@
 import socialLogos from "../../assets/social.svg";
 import styled from "styled-components";
 import logo from "../../assets/logo.svg";
-import Icon from "../../Components/icon/Icon";
+import SvgIcon from "../../Components/SvgIcon/SvgIcon";
+import {FlexWrapper} from "../../Components/FlexWrapper";
+
 
 const Header = () => {
     return (
         <StyledHeader>
             <img src={logo} alt={""}></img>
+            <FlexWrapper  gap="51px" alignItems="center">
             <nav>
                 <StyledUl>
                     <StyledLi>
@@ -24,26 +27,21 @@ const Header = () => {
                     <StyledLi>
                         <a href="">Contacts</a>
                     </StyledLi>
-                    <StyledLi>
-                        <Icon iconId={"git_cat"} size={"30"}/>
-                    </StyledLi>
-                    <StyledLi>
-                        <Icon iconId={"linkedin"} size={"30"}/>
-                    </StyledLi>
-                    <StyledLi>
-                        <Icon iconId={"twitter"} size={"30"}/>
-                    </StyledLi>
                 </StyledUl>
             </nav>
-            {/*<a href={"#"}>*/}
-                <Icon iconId={"git_cat"} size={"30"}    />
-            {/*</a>*/}
-            {/*<a href={"#"}>*/}
-                <Icon iconId={"twitter"} size={"30"}/>
-            {/*</a>*/}
-            {/*<a href={"#"}>*/}
-                <Icon iconId={"linkedin"}/>
-            {/*</a>*/}
+
+            <FlexWrapper gap="20px" alignItems="center">
+                <a href={"#"}>
+                    <SvgIcon iconsHref={socialLogos} iconId={"github_cat"} size={"31px"}/>
+                </a>
+                <a href={"#"}>
+                    <SvgIcon iconsHref={socialLogos} iconId={"twitter"} size={"31px"} />
+                </a>
+                <a href={"#"}>
+                    <SvgIcon iconsHref={socialLogos} iconId={"linkedin"} size={"31px"}/>
+                </a>
+            </FlexWrapper>
+            </FlexWrapper>
         </StyledHeader>
     )
 };
@@ -57,10 +55,16 @@ const StyledLi = styled.li`
     color: #666666;
     font-weight: 500;
     font-size: 20px;
-    a{text-decoration: none}
+
+    a {
+        text-decoration: none;
+        //gap: 20px;
+        //align-items: center;
+    }
 `
 const StyledUl = styled.ul`
     display: flex;
+    alig-items: flex-end;
     gap: 30px;
     list-style: none;
     align-items: center;

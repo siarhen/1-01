@@ -2,17 +2,23 @@ import React from 'react';
 import styled from "styled-components";
 import photo from "../../assets/photo.jpg"
 import {FlexWrapper} from "../../Components/FlexWrapper";
+import {ColoredText} from "../../Components/ColoredText";
 
 const Main = () => {
     return (
         <div>
             <FlexWrapper alignItems={"center"} justify={"space-between"}>
                 <div>
-                    <span>Hi,👋</span>
-                    <h2>I'm Daniil Shishaev</h2>
-                    <h1>A web developer</h1>
+                    <MainText>
+                        <p>Hi,👋<br/>
+                            <p>My name is <br/>
+                                <ColoredText fontSize={"58px"}> Daniil Shishaev</ColoredText>
+                            </p>
+                        </p>
+                        <p>I build thing for web</p>
+                    </MainText>
                 </div>
-                    <Photo src={photo}></Photo>
+                <Photo src={photo}></Photo>
 
             </FlexWrapper>
         </div>
@@ -24,7 +30,11 @@ const Photo = styled.img`
     object-fit: cover;
     border: 2px solid #e91e63;
     border-radius: 100%;
-
 `
+const MainText = styled.main`
+    font-size: 58px;
+    font-weight: bold;
+`
+
 
 export default Main;

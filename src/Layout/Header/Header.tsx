@@ -58,8 +58,8 @@ const StyledLi = styled.li`
 
     a {
         text-decoration: none;
-        //gap: 20px;
-        //align-items: center;
+        font-size: 20px;
+        color: grey;
     }
 `
 const StyledUl = styled.ul`

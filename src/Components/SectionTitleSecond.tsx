@@ -1,11 +1,14 @@
 import styled from "styled-components";
-
-export const SectionTitleSecond = styled.h3`
-    color:black;
+type SectionTitleSecondProps = {
+    fontSize?: string | number;
+    justify?: string;
+}
+export const SectionTitleSecond = styled.h3<SectionTitleSecondProps>`
+    color:#666;
     font-weight: bold;
-    font-size: 32px;
+    font-size: ${props=> props.fontSize || "32px"};
     display: flex;
-    justify-content: center;
+    justify-content: ${props=> props.justify || "center"};
     margin-bottom: 120px;
     margin-top: 49px;
 `

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SectionTitleSecond = styled.h2`
+export const SectionTitleSecond = styled.h3`
     color:black;
     font-weight: bold;
     font-size: 32px;

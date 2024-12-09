@@ -10,6 +10,7 @@ import img3 from "../../assets/projectsImages/2.png";
 import img4 from "../../assets/projectsImages/4.png";
 import img5 from "../../assets/projectsImages/5.png";
 import img6 from "../../assets/projectsImages/6.png";
+import {SectionTitleSecond} from "../../Components/SectionTitleSecond";
 
 const projectsArray = [
     {title : "Social Network", src : img1},
@@ -25,8 +26,8 @@ const Projects = () => {
     return (
         <div>
             <SectionTitle>Projects</SectionTitle>
-            <h3>Things I've build so far</h3>
-            <FlexWrapper wrap={"wrap"} gap={"34px"}>
+            <SectionTitleSecond>Things I've build so far</SectionTitleSecond>
+            <FlexWrapper wrap={"wrap"} gap={"34px"} justify='center'>
                 {projectsArray.map((prj, index) => (
                     <Project title={prj.title} key={index}
                              text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
@@ -37,7 +38,6 @@ const Projects = () => {
     );
 };
 const styledProjects = styled.section`
-    min-height: 100vh;
     background-color: aquamarine;
 `
 
